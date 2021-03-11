@@ -8,17 +8,27 @@ body {
   font-family: "Montserrat", sans-serif;
   /* colors */
   --purple: #5b21b6;
+  --darkpurple1: #4c1d95;
   --light-grey: #f9fafb;
+  --light-grey1: #e5e7eb;
   --darkgrey: #111827;
   --textgrey: #374151;
   --lightgreen: #ecfdf5;
   --darkgreen: #059669;
+  --darkgreen1: #065f46;
   --lightyellow: #fffbeb;
   --darkyellow: #f59e0b;
+  --darkyellow1: #d97706;
   --lightred: #fef2f2;
   --darkred: #dc2626;
+  --darkred1: #b91c1c;
   --lightblue: #eff6ff;
   --darkblue: #2563eb;
+  --darkblue1: #1d4ed8;
+  --facebook: #3b5998;
+  --twitter: #3cf;
+  --linkedin: #0072b1;
+  --instagram: linear-gradient(#e96443, #904e95);
   color: var(--textgrey);
 }
 
@@ -33,12 +43,22 @@ a {
 }
 
 button {
+  cursor: pointer;
+  text-align: center;
+}
+
+button {
   outline: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .rm {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.br {
+  border-radius: 50%;
 }
 
 .pointer {
@@ -246,11 +266,19 @@ button {
 }
 
 /* buttons */
+.buttons,
+.socials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 /* normal buttons */
 .btn {
   padding: 0.75rem;
   border-radius: 0.25rem;
+  margin: 0.5rem;
 }
 
 .btn-primary {
@@ -299,4 +327,232 @@ button {
   border: none;
   color: var(--light-grey);
   background: var(--darkgrey);
+}
+
+.btn-link {
+  background: transparent;
+  border: none;
+  color: var(--darkblue);
+  text-decoration: underline;
+}
+
+/* actual buttons hover */
+.btn-primary:hover {
+  background: var(--darkpurple1);
+}
+
+.btn-secondary:hover {
+  background: var(--darkgrey);
+}
+
+.btn-success:hover {
+  background: var(--darkgreen1);
+}
+
+.btn-danger:hover {
+  background: var(--darkred1);
+}
+
+.btn-warning:hover {
+  background: var(--darkyellow1);
+}
+
+.btn-info:hover {
+  background: var(--darkblue1);
+}
+
+.btn-light:hover {
+  background: var(--light-grey);
+}
+
+.btn-dark:hover {
+  background: var(--darkgrey);
+}
+
+.btn-link:hover {
+  color: var(--darkblue1);
+}
+
+/* outline-buttons */
+.btn-outline-primary {
+  background: transparent;
+  color: var(--purple);
+  border: 1.5px solid;
+}
+
+.btn-outline-secondary {
+  background: transparent;
+  color: var(--textgrey);
+  border: 1.5px solid;
+}
+
+.btn-outline-success {
+  background: transparent;
+  color: var(--darkgreen);
+  border: 1.5px solid;
+}
+
+.btn-outline-danger {
+  background: transparent;
+  color: var(--darkred);
+  border: 1.5px solid;
+}
+
+.btn-outline-warning {
+  background: transparent;
+  color: var(--darkyellow);
+  border: 1.5px solid;
+}
+
+.btn-outline-info {
+  background: transparent;
+  color: var(--darkblue);
+  border: 1.5px solid;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: var(--light-grey1);
+  border: 1.5px solid;
+}
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--dark-grey);
+  border: 1.5px solid;
+}
+
+/* outline-buttons-hover */
+
+.btn-outline-primary:hover {
+  background: var(--purple);
+  color: var(--light-grey);
+  border: 1.5px solid;
+}
+
+.btn-outline-secondary:hover {
+  background: var(--textgrey);
+  color: var(--light-grey);
+  border: 1.5px solid;
+}
+
+.btn-outline-success:hover {
+  background: var(--darkgreen);
+  color: var(--light-grey);
+  border: 1.5px solid;
+}
+
+.btn-outline-danger:hover {
+  background: var(--darkred);
+  color: var(--light-grey);
+  border: 1.5px solid;
+}
+
+.btn-outline-warning:hover {
+  background: var(--darkyellow);
+  color: var(--light-grey);
+  border: 1.5px solid;
+}
+
+.btn-outline-info:hover {
+  background: var(--darkblue);
+  color: var(---light-grey);
+  border: 1.5px solid;
+}
+
+.btn-outline-light:hover {
+  background: var(--light-grey1);
+  color: var(--text-grey);
+  border: 1.5px solid;
+}
+
+.btn-outline-dark:hover {
+  background: var(--darkgrey);
+  color: var(--light-grey);
+  border: none;
+}
+
+/* disabled */
+.disabled {
+  opacity: 0.65;
+}
+
+/* social buttons */
+
+.btn-social {
+  background: transparent;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.55);
+  border: none;
+  text-align: center;
+  border-radius: 12px;
+  padding: 0.5rem;
+}
+
+.btn-social:hover {
+  /* box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.55); */
+  background: var(--light-grey);
+}
+
+.fa-twitter {
+  color: var(--twitter);
+}
+
+.fa-linkedin {
+  color: var(--linkedin);
+}
+
+.fa-github {
+  color: var(--darkgrey);
+}
+
+.fa-instagram {
+  background: var(--instagram);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.portfolio {
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* icon-button */
+.btn-icon {
+  background: transparent;
+  border: none;
+}
+
+.shopping-cart {
+  color: var(--textgrey);
+  padding: 0.5rem;
+}
+
+.shopping-cart:hover {
+  background: var(--light-grey1);
+}
+
+.trash {
+  color: var(--darkred);
+  padding: 0.5rem;
+}
+
+.trash:hover {
+  background: var(--lightred);
+}
+
+.close {
+  color: var(--darkred);
+  border: 1.5px solid;
+  font-size: medium;
+  font-weight: 1000;
+  border-radius: 5px;
+}
+
+.close:hover {
+  background: var(--lightred);
+}
+
+.no-border {
+  border: none;
 }
