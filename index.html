@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
     <link rel="stylesheet" href="styles.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,10 +17,10 @@
                 <a href="/" class="circle-border">SR</a>
             </li>
             <li class = "navbar__list">
-                <a href="/">Home</a>
+                <a href="/" class = "current-page">Home</a>
             </li>
             <li class = "navbar__list">
-                <a href="/">Docs</a>
+                <a href="/avatar/avatar.html">Docs</a>
             </li>
             <li class = "navbar__list">
                 <a href="/">Examples</a>
@@ -246,7 +247,7 @@
 
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
 
         <!-- image - responsive and round -->
@@ -266,10 +267,159 @@
                 <label for="email">email</label>
             </div>
         </div>
-            
-        
-    
-    
+        <!-- modal -->
+        <div class="modal">
+            <div class="modal-container">
+                <h2 class = "rm">Modal title</h2>
+                <div>Modal body text goes here</div>
+                <div class="modal__btns flex">
+                    <button class="btn btn-outline-secondary">Secondary</button>
+                    <button class="btn btn-primary">Primary</button>
+                </div>
+            </div>
+            <!-- delete modal -->
+            <div class="modal-container delete-modal">
+                <h2 class = "rm">Are you sure?</h2>
+                <div>Deleting this deletes the item from the database</div>
+                <div class="modal__btns flex">
+                    <button class="btn btn-outline-secondary">Cancel</button>
+                    <button class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+        <!-- list -->
+        <ul class="list-group rm-ul-padding">
+            <li class="list-item">First item</li>
+            <li class="list-item">Second item</li>
+            <li class="list-item">Third item</li>
+            <li class="list-item">Fourth item</li>
+            <li class="list-item">Fifth item</li>
+
+        </ul>
+        <ul class="list-group rm-ul-padding">
+            <li class="list-item">
+                <div class = "list-heading flex">
+                    <h3 class = "rm">List group item Heading</h3>
+                    <div class = "grey-txt">2 days ago</div>
+                </div>
+                <p>Some placeholder content in a paragraph</p>
+                <small class = "grey-txt">And some muted small print</small>
+            </li>
+            <li class="list-item">
+                <div class = "list-heading flex">
+                    <h3 class = "rm">List group item Heading</h3>
+                    <div class = "grey-txt">2 days ago</div>
+                </div>
+                <p>Some placeholder content in a paragraph</p>
+                <small class = "grey-txt">And some muted small print</small>
+            </li>
+            <li class="list-item">
+                <div class = "list-heading flex">
+                    <h3 class = "rm">List group item Heading</h3>
+                    <div class = "grey-txt">2 days ago</div>
+                </div>
+                <p>Some placeholder content in a paragraph</p>
+                <small class = "grey-txt">And some muted small print</small>
+            </li>
+            <li class="list-item">
+                <div class = "list-heading flex">
+                    <h3 class = "rm">List group item Heading</h3>
+                    <div class = "grey-txt">2 days ago</div>
+                </div>
+                <p>Some placeholder content in a paragraph</p>
+                <small class = "grey-txt">And some muted small print</small>
+            </li>
+            <li class="list-item">
+                <div class = "list-heading flex">
+                    <h3 class = "rm">List group item Heading</h3>
+                    <div class = "grey-txt">2 days ago</div>
+                </div>
+                <p>Some placeholder content in a paragraph</p>
+                <small class = "grey-txt">And some muted small print</small>
+            </li>
+        </ul>
+
+        <!-- toast -->
+
+        <div class = "toast">Item added to bag</div>
+
+        <!--responsive grid -->
+        <div class="responsive-grid">
+            <div class="card pointer">
+                <img class="responsive-img" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9329399/2019/4/24/8df4ed41-1e43-4a0d-97fe-eb47edbdbacd1556086871124-Libas-Women-Kurtas-6161556086869769-1.jpg" alt="">
+                <div class="card__description">
+                    <div class="primary">
+                        <h3 class="rm">Anouk</h3>
+                        <small class="light">Printed Straight Kurta</small>
+                        <div class="price">
+                            <h5 class = "rm"><strong>Rs. 700 </strong></h5>
+                            <h5 class="rm light strikethrough">Rs.1400 </span>
+                            <h5 class="rm discount">(50% OFF)</span>
+                        </div>
+                    </div>
+                    <div class="secondary">
+                        <span class="orange-txt"><strong>Only few left!</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card pointer">
+                <img class="responsive-img" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9329399/2019/4/24/8df4ed41-1e43-4a0d-97fe-eb47edbdbacd1556086871124-Libas-Women-Kurtas-6161556086869769-1.jpg" alt="">
+                <div class="card__description">
+                    <div class="primary">
+                        <h3 class="rm">Anouk</h3>
+                        <small class="light">Printed Straight Kurta</small>
+                        <div class="price">
+                            <h5 class = "rm"><strong>Rs. 700 </strong></h5>
+                            <h5 class="rm light strikethrough">Rs.1400 </span>
+                            <h5 class="rm discount">(50% OFF)</span>
+                        </div>
+                    </div>
+                    <div class="secondary">
+                        <span class="orange-txt"><strong>Only few left!</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card pointer">
+                <img class="responsive-img" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9329399/2019/4/24/8df4ed41-1e43-4a0d-97fe-eb47edbdbacd1556086871124-Libas-Women-Kurtas-6161556086869769-1.jpg" alt="">
+                <div class="card__description">
+                    <div class="primary">
+                        <h3 class="rm">Anouk</h3>
+                        <small class="light">Printed Straight Kurta</small>
+                        <div class="price">
+                            <h5 class = "rm"><strong>Rs. 700 </strong></h5>
+                            <h5 class="rm light strikethrough">Rs.1400 </span>
+                            <h5 class="rm discount">(50% OFF)</span>
+                        </div>
+                    </div>
+                    <div class="secondary">
+                        <span class="orange-txt"><strong>Only few left!</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- typography -->
+        <div class="txt">
+            <h1 class = "heading-txt rm">Heading</h1>
+        </div>
+        <div class="txt">
+            <div class = "small-txt">Small text</div>
+        </div>
+        <div class="txt">
+            <div class="grey-txt">Grey text</div>
+        </div>
+        <div class="txt">
+            <div class = "center-txt">Centered Text</div>
+        </div>
+        <!-- rating -->
+        <div class="rating">
+            <i class = "fa fa-star"></i>
+            <i class = "fa fa-star"></i>
+            <i class = "fa fa-star"></i>
+            <i class = "fa fa-star-o"></i>
+            <i class = "fa fa-star-o"></i>
+        </div>
+        <!-- slider -->
+        <input type = "range" min = "1" max = "100" value = "25">
     <script src = "index.js"></script>
 </body>
 </html>
